@@ -18,7 +18,13 @@ git config --list
 ## 常用命令
 ### 让git删除跟踪的文件，将文件从暂存区删除
 ```git rm --cached *```
-
+### commit相关命令
+```shell
+# 允许提交的message为空
+git commit --allow-empty-message -m ""
+# 提交完之后, 进行了一些修改, 再次上次的message提交
+git commit --amend -m "message"
+```
 ### 版本退回
 ```shell
 # 每次commit都会有log记录
